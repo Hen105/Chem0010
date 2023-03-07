@@ -1,0 +1,318 @@
+<html><!-- #BeginTemplate "/Templates/index.dwt" --><!-- DW6 --><head>
+<!-- #BeginEditable "doctitle" -->
+<title>CHEM 0010</title>
+	<link rel="canonical" href="http://nobel.scas.bcit.ca/chem0010/calendar.html" />
+<!-- #EndEditable --> 
+<script language="JavaScript" src="../chem0010/popup.js"></script>
+<script language="JavaScript">
+<!--
+var   total=1;
+var   db = new Array();
+//Start menu definition
+dbAdd(false, "Course Outline", "../chem0010/outline.html", 0, "", 0)
+dbAdd(false, "Course Schedule<br>", "/chem0010/calendar.htm", 0, "", 0)
+dbAdd(false, "Lecture Notes", "../chem0010/lectures.html", 0, "", 0)
+dbAdd(false, "Online Assignments<br>", "../chem0010/assignments.html", 0, "", 0)
+dbAdd(false, "Experiments", "../chem0010/labs/lab_home.html", 0, "", 0)
+dbAdd(false, "Online Prelabs<br>", "../chem0010/prelabs.html", 0, "", 0)
+dbAdd(false, "Chemist's Tools", "/chem0010/tools.htm", 0, "", 0)
+dbAdd(false, "Course Grade<br>", "../chem0010/yourMarks.html", 0, "", 0)
+dbAdd(false, "Get Assessed", "../chem0010/getAssessed.html", 0, "", 0)
+//End menu definition
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+      }
+    i++
+    }
+   return ""
+  }
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+    }
+  }
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+  }
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+function tree_close() {
+  window.parent.location = window.parent.right.location;
+  }
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<link rel="stylesheet" href="../chem0010/style.css"></head>
+<body bgcolor="#FFFFFF" link="#0000FF" text="#333333" vlink="#993333" alink="#FF0000">
+<table align="center" cellpadding="0" cellspacing="0" width="680" height="714">
+  <!-- HEADER GRAPHIC IS HERE --> 
+  <tbody> 
+  <tr>
+    <td width="4" height="180" align="left" valign="bottom">&nbsp; </td>
+    <td width="674" height="180" align="left" valign="bottom"> 
+      <p align="center"><img width="640" height="212" src="../chem0010/images/header.jpg"> 
+      </p>
+    </td></tr>
+  <tr>
+    <td align="middle" colspan="2" valign="top" height="504"> 
+      <script language="Javascript">
+<!--
+// Array of day names
+var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+// Array of month Names
+	var monthNames = new Array(
+"January","February","March","April","May","June","July","August","September","October","November","December");
+var now = new Date();
+var year= now.getYear();
+year = (year %100) + 2000;
+document.write("<font face=verdana size=1>Today is "+ dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate()+", " + year);
+// -->
+</script>
+      <font face="Arial, Helvetica, Verdana" size="1"><b> 
+      <script language="JavaScript">document.write("<br><font face='arial,helvetica,san-serif'>Last update on " + document.lastModified + "</font>");</script>
+      </b></font> 
+      <table cellpadding="2" cellspacing="0">
+        <tbody>
+        <tr>
+          <td valign="top" width="204" height="389"> 
+            <table cellpadding="4" cellspacing="0" width="202" height="88">
+              <!-- SIDE NAV BAR LIST STARTS --> <tbody> 
+              <tr bgcolor="#FFFFFF"> 
+                <td valign="top" colspan="2"> 
+                  <div align="left"> 
+                    <div align="left"><font color="#666666" size="2" face="Arial, Helvetica, sans-serif"><b><font color="#990033"> 
+                      </font></b></font> </div>
+                    <div> 
+                      <table width="194" cellspacing="0" cellpadding="3" border="0" bgcolor="#FFFFFF" bordercolor="#996699">
+                        <tr> 
+                          <td width="100%"> 
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tr> 
+                                <td align="left" valign="top" bgcolor="#316300"> 
+                                  <a href="../chem0010/index.html"><font size="2" face="verdana,arial,helvetica"><b><font color="#ffffff">CHEM 
+                                  0010</font></b></font></a><br>
+                                </td>
+                                <td align="right" bgcolor="#316300"> <a href="javascript:contract();"><img src="../chem0010/nav/images/minimize.gif" border="0"></a> 
+                                  <a href="javascript:explode();"><img src="../chem0010/nav/images/maximize.gif" border="0"></a> 
+                                </td>
+                              </tr>
+                            </table>
+                            <table border="0" width="100%">
+                              <tr> 
+                                <td> <font color="#000000" size="1"> 
+                                  <script language="JavaScript">
+<!--
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+<!--
+var Outline=""
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent
+  var expanded = current.substring(i-1,i)
+  var top = db[i].top
+  if (top == "") { top="content" }
+    if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+      Outline += pad(currIndent)
+  if (!(db[i].mother)) {
+Outline += ""
+Outline += "<IMG SRC=\"/chem0010/nav/images/document.gif\" BORDER=0>"
+}
+     else {
+   if (current.substring(i-1,i) == 1) {
+      Outline += "<A HREF=\"javascript:history.go(0)\" onClick=\"toggle(" + i + ")\">"
+      Outline += "<IMG SRC=\"/chem0010/nav/images/folderopen.gif\" BORDER=0>"
+      Outline += "</A>"
+     }
+      else {
+       Outline += "<A HREF=\"javascript:history.go(0)\" onClick=\"toggle(" + i + ")\">"
+       Outline += "<IMG SRC=\"/chem0010/nav/images/folderclosed.gif\" BORDER=0>"
+      Outline += "</A>"
+       }
+     }
+     Outline += "&nbsp;";
+     if (db[i].URL == "" || db[i].URL == null) {
+       Outline += " " + db[i].display
+       }
+       else {
+       Outline += "<font face=verdana,arial"+"> <A HREF=\"" + db[i].URL + "\" TARGET=\"_self\">" + db[i].display + "</A></font>"
+       }
+   if (currIndent == 0) {
+     Outline = "<font face=verdana,arial"+">" + Outline + "</font>"
+}
+   Outline += "<BR>"+"\n"
+   prevIndentDisplayed = currIndent
+   showMyDaughter = expanded
+   document.write(Outline)
+   Outline = ""
+  }
+ }
+// end -->
+</script>
+                                  </font> </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+				 </div>
+                </td>
+              </tr>
+              </tbody> 
+            </table>
+          </td>
+          <!-- SIDE NAV BAR LIST ENDS -->
+          <td align="middle" valign="top" width="473" height="389"> 
+            <table cellpadding="0" cellspacing="0" width="100%">
+              <tbody> 
+              <tr> 
+                <td width="100%" height="123" align="middle" valign="top"> 
+                  <div align="left">
+                    <table width="462" border="0">
+                      <tr>
+                        <td width="328"><a href="mailto:aduso@bcit.ca"><img alt="Email your instructor" border="0" height="33" src="../chem0010/images/email.gif" width="109"></a><a href="../chem0010/calendar.html"><img alt="Need Some Review?" border="0" height="33" src="../chem0010/images/schedule.gif" width="109"></a><a href="../resource.html" target="_blank"><img alt="Chemistry Resource Center" border="0" height="33" src="../chem0010/images/chemResourceCenter.gif" width="109"></a></td>
+                        <td width="124"><font face="Arial, Helvetica, sans-serif" size="1" class="smallgrey">Type 
+                    in keywords to search the site</font></td>
+                      </tr>
+                      <tr>
+                        <td><a href="../chem0010/tools.html"><img src="../chem0010/images/chemistTools_button.gif" alt="Periodic Table" width="109" height="33" border="0"></a><a href="#"><img src="../chem0010/images/ptable_button.gif" alt="periodic table" border="0" onclick="MM_openBrWindow('../chem0010/ptable_e.html','../chem0010/ptable.html','../chem0010/status-yes-menubar-yes-scrollbars-yes-resizable-yes-width-600-height-500.html')"></a></td>
+                        <td>
+						<form method="get" action="http://search.atomz.com/search/">
+                          <input type="text" name="sp-q" size="10" style="font: 10px Verdana,Geneva,sans-serif; color: #000000; background-color: #57aa76; border-color: #FFFFFF; border: 1px groove #FFFFFF; height=16px; width: 80px;" alt="Enter search text here.">
+                          <input name="submit" type="submit" style="font: 10px Verdana,Geneva,sans-serif; color: #000000; name=" value="Go!" size="8" submit">
+                          <input type="hidden" name="sp-a" value="sp1000a51b">
+                        </form></td>
+                      </tr>
+                    </table>
+                    <hr>
+                  </div>                </td>
+              </tr>
+              <!-- End Main --></tbody> 
+            </table>
+            <table cellspacing="3" width="97%">
+              <tbody> 
+              <tr> 
+                <td valign="top" colspan="2"> 
+                   <!-- #BeginEditable "content" --> 
+                   <table align="left" border="0" cellpadding="1" cellspacing="0" height="100" width="362">
+                     <tbody>
+                       <tr height="1" cntrlrow>
+                         <td height="1" width="360"></td>
+                       </tr>
+                       <tr height="4" valign="top">
+                         <td width="360" height="4"><p>
+						 <font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b> </b></font><font face="Arial, Helvetica, sans-serif" size="2"><img src="../chem0010/images/spacer.gif" alt="spacer" width="10" height="8"><b><span class="MAIN"><img align="CENTER" border="0" src="../chem0010/images/calendr.gif" alt="Calendar" width="31" height="25"> </span>CHEM 0010 Calendar of Schedules </b></font></p>
+                             <span class="MAIN"><font face="Arial, Helvetica, sans-serif" size="2"><b><img src="../chem0010/images/spacer.gif" alt="spacer" width="40" height="8"></b></font></span><spacer height="4" width="1" type="block"></td>
+                       </tr>
+                       <tr valign="top">
+                         <td width="360" height="209"><p><span class="MAIN"><img src="../chem0010/images/spacer.gif" alt="spacer" width="10" height="8"><img src="../chem0010/images/redball.gif" alt="reball" width="15" height="13" align="absmiddle"><a href="javascript:CreateWnd('calendar/sep2009.htm', 770, 600, true);">September 
+                               2009<br>
+                             </a><img src="../chem0010/images/spacer.gif" alt="spacer" width="10" height="8"><img src="../chem0010/images/redball.gif" alt="reball" width="15" height="13" align="absmiddle"><a href="javascript:CreateWnd('calendar/oct2009.htm', 770, 600, true);">October  
+                               2009<br>
+                             </a><img src="../chem0010/images/spacer.gif" alt="spacer" width="10" height="8"><img src="../chem0010/images/redball.gif" alt="reball" width="15" height="13" align="absmiddle"><a href="javascript:CreateWnd('calendar/nov2009.htm', 770, 600, true);">November 
+                               2009</a><br>
+                  <img src="../chem0010/images/spacer.gif" alt="spacer" width="10" height="8"><img src="../chem0010/images/redball.gif" alt="reball" width="15" height="13" align="absmiddle"><a href="javascript:CreateWnd('calendar/dec2009.htm', 770, 600, true);">December 2009</a> </span> </p>
+                             <p> <br>
+                                 <br>
+                           </p></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   <!-- #EndEditable --> 
+                </td>
+              </tr>
+              <tr> 
+                <td colspan="2" valign="top"> 
+                  <hr>
+                </td>
+              </tr>
+              </tbody> 
+            </table>
+            <table width="100%" border="0">
+              <tr> 
+                <td height="50"> 
+                  <div align="center"><font face="arial, helvetica" size="2" color="333366"><font color="#000000">                    Chemistry Department<br>
+                    British Columbia Institute of Technology<br>
+                    Email:
+                    <a href="mailto:jlowe@bcit.ca">jlowe@bcit.ca</a></font></font><font size="1" face="Arial, Helvetica, sans-serif"><br>
+                    <br>
+                    © 1996-2006 
+                    All rights reserved.</font></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr></tbody></table></td></tr>
+  <tr>
+    <td colspan="2">&nbsp; </td>
+</tr></tbody></table><!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1160473; 
+var sc_invisible=1; 
+var sc_partition=10; 
+var sc_security="e3cf5a4a"; 
+</script>
+<script type="text/javascript" language="javascript" src="../counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img src="../counter.php-sc_project-1160473-java-0-security-e3cf5a4a-invisible-1.jpg" alt="free stats" border="0"></a> </noscript>
+<!-- End of StatCounter Code --></body><!-- #EndTemplate --></html>

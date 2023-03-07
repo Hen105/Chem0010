@@ -1,0 +1,94 @@
+a:active {  font-family: Arial, Helvetica, sans-serif; color: #FF0000}
+a:hover {  font-family: Arial, Helvetica, sans-serif; color: #FF0000}
+a:link {  font-family: Arial, Helvetica, sans-serif; color: #3333CC}
+a:visited {  font-family: Arial, Helvetica, sans-serif; color: #333333}
+
+BODY {
+ background-attachment: fixed;
+; font: normal 12pt Arial, Helvetica, sans-serif; color: #333333
+}
+
+.FOOTER {
+ font-size: 8pt;
+ color: #333333;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+.TITLE {
+ font-size: 30pt;
+ font-weight: 100;
+ color: #3E819E;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+.MAIN {
+ font-size: 10pt;
+ font-weight: 100;
+ color: #333333;
+ font-family: "arial", "helvetica", sans-serif;
+; font-style: normal
+}
+
+H1 {
+ font-size: 24pt;
+ font-weight: 500;
+ color: #333366;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+H2 {
+ font-size: 18pt;
+ font-weight: 500;
+ color: #333366;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+H3 {
+ font-size: 16pt;
+ font-weight: 500;
+ color: #333366;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+H4 {
+ font-size: 12pt;
+ font-weight: 500;
+ color: #333366;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+H5 {
+ font-size: 10pt;
+ font-weight: 500;
+ color: #333366;
+ font-family: "arial", "helvetica", sans-serif;
+}
+
+B {
+ font-size: 10pt;
+ font-weight: 600;
+ font-family: "arial", "helvetica", sans-serif;
+ color: #000080;
+}
+
+
+
+UL {
+ font-size: 10pt;
+ font-weight: 100;
+ font-family: "arial", "helvetica", sans-serif;
+ color: #003366;
+}
+
+.FLAG {  font: normal 8pt Arial, Helvetica, sans-serif; 
+         color: #FF0000}
+font {  font: 10pt Arial, Helvetica, sans-serif}
+.QUOTE {  font: italic bold normal 10pt Arial, Helvetica, sans-serif; color: #333333}
+ol { font-size: 10pt; font-weight: 100; font-family: "arial", "helvetica", sans-serif; color: #003366; }
+.smallRed {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: bold; color: #CC0000}
+.smallBlue { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: bold; color: #3333FF}
+.smallgrey { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: bold; color: #333333}
+.bigRed { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; font-weight: bold; color: #CC0000 }
+.smallbrown { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: bold; color: #993300}
+.smallRed_notbold { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: normal; color: #CC0000 }
+.secondheader { font: italic bold normal 10pt Arial, Helvetica, sans-serif; color: #333333 }
